@@ -1,0 +1,15 @@
+body {
+  background-color:#72593d;
+}
+.App {
+  color:#e7d9bd
+}
+.title {
+  text-align: center;
+}
+.posts {
+  margin: 50px;
+}
+.post { 
+  margin-bottom: 50px;
+}

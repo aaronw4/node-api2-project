@@ -6,6 +6,7 @@ const server = express();
 
 server.use(express.json());
 server.use(cors());
+
 server.use('/api/posts', blogRouter);
 
 module.exports = server;

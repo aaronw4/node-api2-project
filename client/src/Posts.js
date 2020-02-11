@@ -7,7 +7,7 @@ const Posts = () => {
     useEffect(() => {
         function fetchData() {
             axios
-                .get('http://localhost:4000/api/posts')
+                .get('https://arw-node-api-project2.herokuapp.com/api/posts')
                 .then(info => setPosts(info.data))
                 .catch(err => console.log(err));
         }
@@ -17,14 +17,14 @@ const Posts = () => {
     return(
         <div>
             {console.log(posts)}
-            <div className='title'>
+            <div className='pageTitle'>
                 <h1>Lord of the Rings Posts</h1>
             </div>
             <div className='posts'>
                 {posts.map(post => (
                     <div key={post.id} className='post'>
-                        <h3>{post.id}) {post.title}</h3>
-                        <p>{post.contents}</p>
+                        <h3 className='postTitle'>{post.id}) {post.title}</h3>
+                        <p className='postContents'>{post.contents}</p>
                     </div>
                 ))}
             </div>

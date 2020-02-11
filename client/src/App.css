@@ -4,12 +4,17 @@ body {
 .App {
   color:#e7d9bd
 }
-.title {
+.pageTitle {
   text-align: center;
+  margin: 100px;
+  text-decoration: underline;
 }
 .posts {
   margin: 50px;
 }
 .post { 
-  margin-bottom: 50px;
+  margin-bottom: 100px;
+}
+.postContents {
+  margin-left: 25px;
 }
